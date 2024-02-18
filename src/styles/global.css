@@ -1,0 +1,105 @@
+@import url("./reset.css");
+
+:root {
+  font-family: "Courier New", Courier, monospace;
+  --background: #efefef;
+  --on-background: #000;
+  --nav-link: #4a4a4a;
+  --nav-link-hover: #1e2eb9;
+  display: flex;
+  justify-content: center;
+  min-width: 40rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 3rem;
+  background-color: var(--background);
+  min-height: 100vh;
+  max-width: 30rem;
+  min-width: 30rem;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  height: 6rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-family: "Prata", serif;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-family: "Prata", serif;
+  letter-spacing: 2px;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-family: "Prata", serif;
+  letter-spacing: 2px;
+}
+
+p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0rem;
+  width: 100%;
+}
+
+.sideImage {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.sideImage img {
+  width: 48%;
+}
+
+.sideBySide {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}

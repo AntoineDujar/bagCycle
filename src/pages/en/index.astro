@@ -1,17 +1,17 @@
 ---
 import { Image } from "astro:assets";
 
-import Layout from "../layouts/Layout.astro";
+import Layout from "../../layouts/Layout.astro";
 
-import logo from "../assets/bc_logo.svg";
-import redTransparent from "../assets/red_bag_transparent.png";
-import bag1 from "../assets/bag1.jpg";
-import bag2 from "../assets/bag2.jpg";
-import bag3 from "../assets/bag3.jpg";
-import bag4 from "../assets/bag4.jpg";
-import bagwithmodel from "../assets/bagwithmodel.png";
-import award from "../assets/award.jpg";
-import colorBags from "../assets/color_bags.jpg";
+import logo from "../../assets/bc_logo.svg";
+import redTransparent from "../../assets/red_bag_transparent.png";
+import bag1 from "../../assets/bag1.jpg";
+import bag2 from "../../assets/bag2.jpg";
+import bag3 from "../../assets/bag3.jpg";
+import bag4 from "../../assets/bag4.jpg";
+import bagwithmodel from "../../assets/bagwithmodel.png";
+import award from "../../assets/award.jpg";
+import colorBags from "../../assets/color_bags.jpg";
 ---
 
 <Layout title="BagCycle">
@@ -19,11 +19,11 @@ import colorBags from "../assets/color_bags.jpg";
     <Image src={logo} alt="BagCycle logo image" height="500" />
   </header>
   <main>
-    <h1>Sac à vélo,</h1>
-    <h1>Sac à dos.</h1>
+    <h1>Bike bag,</h1>
+    <h1>Backpack.</h1>
     <Image src={redTransparent} alt="BagCycle image" height="600" />
     <div class="textBlock">
-      <p>présenté par</p>
+      <p>presented by</p>
       <h3>L'atelier Francais du Surcyclage</h3>
     </div>
     <div class="textBlock">
@@ -37,38 +37,32 @@ import colorBags from "../assets/color_bags.jpg";
       </div>
     </div>
     <div class="textBlock">
-      <h2>Qualités</h2>
-      <p>Maintient les boissons fraîches (5-6 heures)</p>
-      <p>
-        Matériau extérieur en polyester fabriqué à partir de bouteilles en
-        plastique recyclé
-      </p>
-      <p>
-        Sangles réfléchissantes de sécurité conformes à la norme européenne EN
-        17353
-      </p>
+      <h2>Features</h2>
+      <p>Keep drinks cold (5-6 hours)</p>
+      <p>Outer polyester material made from recycled plastic bottles</p>
+      <p>Safety reflective straps following European standard EN 17353</p>
     </div>
     <Image src={bagwithmodel} alt="BagCycle image" width="600" />
     <div class="textBlock">
       <h2>Sizes and Colours</h2>
       <div class="sideBySide">
         <div>
-          <p>Moyen</p>
+          <p>Medium</p>
           <p>22x12x44.5cm</p>
           <p>36,95€</p>
         </div>
         <div>
-          <p>Grand</p>
+          <p>Large</p>
           <p>28x16x53.5cm</p>
           <p>39,95€</p>
         </div>
       </div>
-      <p>en gris, beige, bleu, rouge, violet, orange et vert</p>
+      <p>in grey, beige, blue, red, purple, orange and green</p>
     </div>
     <Image src={colorBags} alt="BagCycle image" width="600" />
     <div class="textBlock">
       <h2>Awards</h2>
-      <p>Le meilleur produit promotionnel de l'année 2024 au salon CTCO</p>
+      <p>Best Promotional Product of the Year 2024 at the CTCO trade show</p>
     </div>
     <Image src={award} alt="BagCycle image" width="600" />
   </main>
