@@ -2,38 +2,32 @@
 import { Image } from "astro:assets";
 
 import Layout from "../../layouts/Layout.astro";
-
-import logo from "../../assets/bc_logo.svg";
-import redTransparent from "../../assets/red_bag_transparent.png";
-import bag1 from "../../assets/bag1.jpg";
-import bag2 from "../../assets/bag2.jpg";
-import bag3 from "../../assets/bag3.jpg";
-import bag4 from "../../assets/bag4.jpg";
-import bagwithmodel from "../../assets/bagwithmodel.png";
-import award from "../../assets/award.jpg";
-import colorBags from "../../assets/color_bags.jpg";
 ---
 
 <Layout title="BagCycle">
   <header>
-    <!-- <Image src={logo} alt="BagCycle logo image" height="500" /> -->
+    <img src="/assets/bc_logo.svg" alt="BagCycle logo image" height="500" />
   </header>
   <main>
     <h1>Bike bag,</h1>
     <h1>Backpack.</h1>
-    <Image src={redTransparent} alt="BagCycle image" height="600" />
+    <img
+      src="/assets/red_bag_transparent.png"
+      alt="BagCycle image"
+      height="600"
+    />
     <div class="textBlock">
       <p>presented by</p>
       <h3>L'atelier Francais du Surcyclage</h3>
     </div>
     <div class="textBlock">
       <div class="sideImage">
-        <Image src={bag1} alt="BagCycle image" width="200" />
-        <Image src={bag2} alt="BagCycle image" width="200" />
+        <img src="/assets/bag1.jpg" alt="BagCycle image" width="200" />
+        <img src="/assets/bag2.jpg" alt="BagCycle image" width="200" />
       </div>
       <div class="sideImage">
-        <Image src={bag3} alt="BagCycle image" width="200" />
-        <Image src={bag4} alt="BagCycle image" width="200" />
+        <img src="/assets/bag3.jpg" alt="BagCycle image" width="200" />
+        <img src="/assets/bag4.jpg" alt="BagCycle image" width="200" />
       </div>
     </div>
     <div class="textBlock">
@@ -42,7 +36,7 @@ import colorBags from "../../assets/color_bags.jpg";
       <p>Outer polyester material made from recycled plastic bottles</p>
       <p>Safety reflective straps following European standard EN 17353</p>
     </div>
-    <Image src={bagwithmodel} alt="BagCycle image" width="600" />
+    <img src="/assets/bagwithmodel.png" alt="BagCycle image" width="600" />
     <div class="textBlock">
       <h2>Sizes and Colours</h2>
       <div class="sideBySide">
@@ -59,11 +53,11 @@ import colorBags from "../../assets/color_bags.jpg";
       </div>
       <p>in grey, beige, blue, red, purple, orange and green</p>
     </div>
-    <Image src={colorBags} alt="BagCycle image" width="600" />
+    <img src="/assets/color_bags.jpg" alt="BagCycle image" width="600" />
     <div class="textBlock">
       <h2>Awards</h2>
       <p>Best Promotional Product of the Year 2024 at the CTCO trade show</p>
     </div>
-    <Image src={award} alt="BagCycle image" width="600" />
+    <img src="/assets/award.jpg" alt="BagCycle image" width="600" />
   </main>
 </Layout>

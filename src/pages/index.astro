@@ -2,38 +2,32 @@
 import { Image } from "astro:assets";
 
 import Layout from "../layouts/Layout.astro";
-
-import logo from "../assets/bc_logo.svg";
-import redTransparent from "../assets/red_bag_transparent.png";
-import bag1 from "../assets/bag1.jpg";
-import bag2 from "../assets/bag2.jpg";
-import bag3 from "../assets/bag3.jpg";
-import bag4 from "../assets/bag4.jpg";
-import bagwithmodel from "../assets/bagwithmodel.png";
-import award from "../assets/award.jpg";
-import colorBags from "../assets/color_bags.jpg";
 ---
 
 <Layout title="BagCycle">
   <header>
-    <!-- <Image src={logo} alt="BagCycle logo image" height="500" /> -->
+    <img src="/assets/bc_logo.svg" alt="BagCycle logo image" height="500" />
   </header>
   <main>
     <h1>Sac à vélo,</h1>
     <h1>Sac à dos.</h1>
-    <Image src={redTransparent} alt="BagCycle image" height="600" />
+    <img
+      src="/assets/red_bag_transparent.png"
+      alt="BagCycle image"
+      height="600"
+    />
     <div class="textBlock">
       <p>présenté par</p>
       <h3>L'atelier Francais du Surcyclage</h3>
     </div>
     <div class="textBlock">
       <div class="sideImage">
-        <Image src={bag1} alt="BagCycle image" width="200" />
-        <Image src={bag2} alt="BagCycle image" width="200" />
+        <img src="/assets/bag1.jpg" alt="BagCycle image" width="200" />
+        <img src="/assets/bag2.jpg" alt="BagCycle image" width="200" />
       </div>
       <div class="sideImage">
-        <Image src={bag3} alt="BagCycle image" width="200" />
-        <Image src={bag4} alt="BagCycle image" width="200" />
+        <img src="/assets/bag3.jpg" alt="BagCycle image" width="200" />
+        <img src="/assets/bag4.jpg" alt="BagCycle image" width="200" />
       </div>
     </div>
     <div class="textBlock">
@@ -48,7 +42,7 @@ import colorBags from "../assets/color_bags.jpg";
         17353
       </p>
     </div>
-    <Image src={bagwithmodel} alt="BagCycle image" width="600" />
+    <img src="/assets/bagwithmodel.png" alt="BagCycle image" width="600" />
     <div class="textBlock">
       <h2>Sizes and Colours</h2>
       <div class="sideBySide">
@@ -65,11 +59,11 @@ import colorBags from "../assets/color_bags.jpg";
       </div>
       <p>en gris, beige, bleu, rouge, violet, orange et vert</p>
     </div>
-    <Image src={colorBags} alt="BagCycle image" width="600" />
+    <img src="/assets/color_bags.jpg" alt="BagCycle image" width="600" />
     <div class="textBlock">
       <h2>Awards</h2>
       <p>Le meilleur produit promotionnel de l'année 2024 au salon CTCO</p>
     </div>
-    <Image src={award} alt="BagCycle image" width="600" />
+    <img src="/assets/award.jpg" alt="BagCycle image" width="600" />
   </main>
 </Layout>
