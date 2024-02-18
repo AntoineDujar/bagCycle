@@ -103,3 +103,7 @@ img {
   justify-content: space-evenly;
   width: 100%;
 }
+header img {
+  width: auto;
+  height: 100%;
+}
