@@ -124,3 +124,9 @@ header img {
 footer {
   width: 100%;
 }
+
+.flicking-camera {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

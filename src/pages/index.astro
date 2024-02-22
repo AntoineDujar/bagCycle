@@ -2,7 +2,8 @@
 import { Image } from "astro:assets";
 
 import Layout from "../layouts/Layout.astro";
-import Carousel from "@components/Carousel.astro";
+import Carousel1 from "@components/Carousel1.astro";
+import Carousel2 from "@components/Carousel2.astro";
 ---
 
 <Layout title="BagCycle">
@@ -22,7 +23,7 @@ import Carousel from "@components/Carousel.astro";
       <h3>L'atelier Français du Surcyclage</h3>
     </div>
 
-    <Carousel />
+    <Carousel1 />
     <!-- <div class="textBlock">
       <div class="sideImage">
         <img src="/assets/bag1.jpg" alt="BagCycle image" width="200" />
@@ -80,7 +81,9 @@ import Carousel from "@components/Carousel.astro";
         Le meilleur produit promotionnel de l'année 2024 au salon CTCO - Lyon
       </p>
     </div>
-    <img src="/assets/award.jpg" alt="BagCycle image" width="600" />
+    <Carousel2 />
+
+    <!-- <img src="/assets/award.jpg" alt="BagCycle image" width="600" /> -->
   </main>
   <footer>
     <h2>Contact</h2>
