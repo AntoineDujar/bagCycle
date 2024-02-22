@@ -3,19 +3,35 @@ import Flick from "@components/Flick.svelte";
 import ImageWrapper from "@components/ImageWrapper.astro";
 ---
 
-<Flick client:idle class="flicker">
-  <div slot="image-1">
-    <img class="ca" src="./assets/bag1.jpg" alt="image" height="800" />
-  </div>
-  <div slot="image-2">
-    <img class="ca" src="./assets/bag2.jpg" alt="image" height="800" />
-  </div>
-  <div slot="image-3">
-    <img class="ca" src="./assets/bag3.jpg" alt="image" height="800" />
-  </div>
-  <div slot="image-4">
-    <img class="ca" src="./assets/bag4.jpg" alt="image" height="800" />
-  </div>
+<Flick client:idle>
+  <img
+    slot="image-1"
+    class="ca"
+    src="./assets/bag1.jpg"
+    alt="image"
+    height="800"
+  />
+  <img
+    slot="image-2"
+    class="ca"
+    src="./assets/bag2.jpg"
+    alt="image"
+    height="800"
+  />
+  <img
+    slot="image-3"
+    class="ca"
+    src="./assets/bag3.jpg"
+    alt="image"
+    height="800"
+  />
+  <img
+    slot="image-4"
+    class="ca"
+    src="./assets/bag4.jpg"
+    alt="image"
+    height="800"
+  />
 </Flick>
 
 <style>
