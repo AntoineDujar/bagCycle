@@ -127,6 +127,5 @@ footer {
 
 .flicking-camera {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
