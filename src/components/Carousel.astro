@@ -1,0 +1,27 @@
+---
+import Flick from "@components/Flick.svelte";
+import ImageWrapper from "@components/ImageWrapper.astro";
+---
+
+<Flick client:idle class="flicker">
+  <ImageWrapper
+    slot="image-1"
+    image="./assets/red_bag_transparent.png"
+    alt="logo for surcyclage"
+  />
+  <ImageWrapper
+    slot="image-2"
+    image="./assets/red_bag_transparent.png"
+    alt="logo for surcyclage"
+  />
+  <ImageWrapper
+    slot="image-3"
+    image="./assets/red_bag_transparent.png"
+    alt="logo for surcyclage"
+  />
+  <ImageWrapper
+    slot="image-4"
+    image="./assets/red_bag_transparent.png"
+    alt="logo for surcyclage"
+  />
+</Flick>

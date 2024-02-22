@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 
 import Layout from "../layouts/Layout.astro";
+import Carousel from "@components/Carousel.astro";
 ---
 
 <Layout title="BagCycle">
@@ -11,11 +12,12 @@ import Layout from "../layouts/Layout.astro";
   <main>
     <h4>Produit Déposé INPI - Eco Responsable</h4>
     <h1>2 en 1 - Sacoche Vélo et Sac à Dos</h1>
-    <img
+    <!-- <img
       src="/assets/red_bag_transparent.png"
       alt="BagCycle image"
       height="600"
-    />
+    /> -->
+    <Carousel />
     <div class="textBlock">
       <h4>présenté en France par</h4>
       <h3>L'atelier Français du Surcyclage</h3>
