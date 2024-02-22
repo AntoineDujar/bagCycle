@@ -4,24 +4,24 @@ import ImageWrapper from "@components/ImageWrapper.astro";
 ---
 
 <Flick client:idle class="flicker">
-  <ImageWrapper
-    slot="image-1"
-    image="./assets/red_bag_transparent.png"
-    alt="logo for surcyclage"
-  />
-  <ImageWrapper
-    slot="image-2"
-    image="./assets/red_bag_transparent.png"
-    alt="logo for surcyclage"
-  />
-  <ImageWrapper
-    slot="image-3"
-    image="./assets/red_bag_transparent.png"
-    alt="logo for surcyclage"
-  />
-  <ImageWrapper
-    slot="image-4"
-    image="./assets/red_bag_transparent.png"
-    alt="logo for surcyclage"
-  />
+  <div slot="image-1">
+    <img class="ca" src="./assets/bag1.jpg" alt="image" height="800" />
+  </div>
+  <div slot="image-2">
+    <img class="ca" src="./assets/bag2.jpg" alt="image" height="800" />
+  </div>
+  <div slot="image-3">
+    <img class="ca" src="./assets/bag3.jpg" alt="image" height="800" />
+  </div>
+  <div slot="image-4">
+    <img class="ca" src="./assets/bag4.jpg" alt="image" height="800" />
+  </div>
 </Flick>
+
+<style>
+  .ca {
+    width: 30rem;
+    margin-bottom: 0rem;
+    border-radius: 8px;
+  }
+</style>
