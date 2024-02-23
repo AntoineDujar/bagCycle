@@ -3,16 +3,17 @@ import { Image } from "astro:assets";
 
 import Layout from "../layouts/Layout.astro";
 import Carousel1 from "@components/Carousel1.astro";
-import Carousel2 from "@components/Carousel2.astro";
 ---
 
 <Layout title="BagCycle">
   <header>
     <img src="/assets/bc_logo.png" alt="BagCycle logo image" height="200" />
+    <h4>Produit Eco-Responsable 2 en 1</h4>
+    <h4>Déposé INPI</h4>
   </header>
   <main>
-    <h4>Produit Déposé INPI - Eco Responsable</h4>
-    <h1>2 en 1 - Sacoche Vélo et Sac à Dos</h1>
+    <h1>Sacoche Vélo</h1>
+    <h1>Sac à Dos</h1>
     <img
       src="/assets/red_bag_transparent.png"
       alt="BagCycle image"
@@ -23,8 +24,7 @@ import Carousel2 from "@components/Carousel2.astro";
       <h3>L'atelier Français du Surcyclage</h3>
     </div>
 
-    <Carousel1 />
-    <!-- <div class="textBlock">
+    <div class="textBlock">
       <div class="sideImage">
         <img src="/assets/bag1.jpg" alt="BagCycle image" width="200" />
         <img src="/assets/bag2.jpg" alt="BagCycle image" width="200" />
@@ -33,7 +33,8 @@ import Carousel2 from "@components/Carousel2.astro";
         <img src="/assets/bag3.jpg" alt="BagCycle image" width="200" />
         <img src="/assets/bag4.jpg" alt="BagCycle image" width="200" />
       </div>
-    </div> -->
+    </div>
+    <Carousel1 />
     <div class="textBlock">
       <h2>Qualités</h2>
       <p>
@@ -47,8 +48,8 @@ import Carousel2 from "@components/Carousel2.astro";
       </p>
       <p>Le moyen modèle peut contenir 3 bouteille de 1L</p>
       <p>
-        Pour la version Isotherme : permet de garder les boissons/repas au frais
-        pendant plusieurs heures
+        La version Isotherme (5mm épaisseur) permet de garder les boissons/repas
+        au frais pendant plusieurs heures
       </p>
     </div>
     <img src="/assets/bagwithmodel.png" alt="BagCycle image" width="600" />
@@ -56,23 +57,25 @@ import Carousel2 from "@components/Carousel2.astro";
       <h2>Tailles et Couleurs</h2>
       <div class="sideBySide">
         <div>
-          <p>Moyen</p>
+          <p>MOYEN</p>
           <p>12-13L</p>
           <p>22x12x44.5cm</p>
-          <p>37.95€ TTC</p>
+          <p>a make less space between moyen and 12-13L and 22x12x..</p>
+          <p>PVP : 37.95€ TTC</p>
         </div>
         <div>
-          <p>Grand</p>
-          <p>18L</p>
+          <p>GRAND</p>
+          <p>18L-19L</p>
           <p>28x16x53.5cm</p>
-          <p>39.95€ TTC</p>
+          <p>a</p>
+          <p>PVP : 39.95€ TTC</p>
         </div>
       </div>
+      <p>COLORIS SUR STOCK : Gris / Bleu / Beige ou Noir</p>
       <p>
-        versions avec ou sans matière Isotherme, épaisseur matière isotherme à
-        5mm
+        COLORIS FABRICATION SPECIALE : Gris / Beige/ Bleu / Rouge / Violet /
+        Orange / Vert
       </p>
-      <p>en gris, beige, bleu, rouge, violet, orange et vert</p>
     </div>
     <img src="/assets/color_bags.jpg" alt="BagCycle image" width="600" />
     <div class="textBlock">
@@ -81,9 +84,10 @@ import Carousel2 from "@components/Carousel2.astro";
         Le meilleur produit promotionnel de l'année 2024 au salon CTCO - Lyon
       </p>
     </div>
-    <Carousel2 />
+    <!-- <Carousel2 /> -->
 
-    <!-- <img src="/assets/award.jpg" alt="BagCycle image" width="600" /> -->
+    <img src="/assets/salon1.jpg" alt="BagCycle image" width="600" />
+    <img src="/assets/award.jpg" alt="BagCycle image" width="600" />
   </main>
   <footer>
     <h2>Contact</h2>

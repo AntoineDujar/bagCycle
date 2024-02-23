@@ -24,6 +24,8 @@
     <FlickingPanel><slot name="image-2" /></FlickingPanel>
     <FlickingPanel><slot name="image-3" /></FlickingPanel>
     <FlickingPanel><slot name="image-4" /></FlickingPanel>
+    <FlickingPanel><slot name="image-5" /></FlickingPanel>
+    <FlickingPanel><slot name="image-6" /></FlickingPanel>
     <svelte:fragment slot="viewport">
       <span class="flicking-arrow-prev"></span>
       <span class="flicking-arrow-next"></span>
@@ -44,6 +46,6 @@
     border-radius: 8px;
     overflow: hidden;
     height: 40rem;
-    margin-bottom: 0rem;
+    margin-bottom: 1rem;
   }
 </style>

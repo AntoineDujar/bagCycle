@@ -27,9 +27,13 @@ body {
 header {
   width: 100%;
   display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-bottom: 7rem;
   height: 6rem;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
@@ -117,8 +121,8 @@ img {
 }
 
 header img {
-  width: auto;
-  height: 100%;
+  width: 20rem;
+  height: auto;
 }
 
 footer {
