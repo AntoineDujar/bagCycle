@@ -1,25 +1,28 @@
 ---
 import { Image } from "astro:assets";
-
-import Layout from "../../layouts/Layout.astro";
+import Layout from "@layouts/Layout.astro";
+import Carousel1 from "@components/Carousel.astro";
 ---
 
 <Layout title="BagCycle">
   <header>
     <img src="/assets/bc_logo.png" alt="BagCycle logo image" height="200" />
+    <h4>2 in 1 Eco-friendly product</h4>
+    <h4>INPI registered</h4>
   </header>
   <main>
-    <h1>Bike bag,</h1>
-    <h1>Backpack.</h1>
+    <h1>Bicycle Bag</h1>
+    <h1>Backpack</h1>
     <img
       src="/assets/red_bag_transparent.png"
       alt="BagCycle image"
       height="600"
     />
     <div class="textBlock">
-      <p>presented by</p>
-      <h3>L'atelier Francais du Surcyclage</h3>
+      <h4>presented in France by</h4>
+      <h3>L'atelier Français du Surcyclage</h3>
     </div>
+
     <div class="textBlock">
       <div class="sideImage">
         <img src="/assets/bag1.jpg" alt="BagCycle image" width="200" />
@@ -30,35 +33,66 @@ import Layout from "../../layouts/Layout.astro";
         <img src="/assets/bag4.jpg" alt="BagCycle image" width="200" />
       </div>
     </div>
+    <Carousel1 />
     <div class="textBlock">
       <h2>Features</h2>
-      <p>Keep drinks cold (5-6 hours)</p>
-      <p>Outer polyester material made from recycled plastic bottles</p>
-      <p>Safety reflective straps following European standard EN 17353</p>
+      <ul class="qualities">
+        <li>Eco-Friendly Rpet Material, made from recycled plastic bottles</li>
+        <li>Reflective strips for your safety, compliant with the standard</li>
+        <li>An interior zippered pocket for the non-insulated model</li>
+        <li>
+          Bonus product: 1 bicycle-shaped keychain made of aluminum with the
+          brand name
+        </li>
+        <li>The medium size can hold up to 3 1L bottles</li>
+        <li>
+          The insulated version (5mm thick) keeps drinks/meals cool for several
+          hours
+        </li>
+      </ul>
     </div>
     <img src="/assets/bagwithmodel.png" alt="BagCycle image" width="600" />
     <div class="textBlock">
-      <h2>Sizes and Colours</h2>
+      <h2>Sizes</h2>
       <div class="sideBySide">
         <div>
-          <p>Medium</p>
+          <p class="size sizeName">MEDIUM</p>
+          <p class="size">12-13L</p>
           <p>22x12x44.5cm</p>
-          <p>36,95€</p>
+          <p>PVP : 37.95€ TTC</p>
         </div>
         <div>
-          <p>Large</p>
+          <p class="size sizeName">LARGE</p>
+          <p class="size">18L-19L</p>
           <p>28x16x53.5cm</p>
-          <p>39,95€</p>
+          <p>PVP : 39.95€ TTC</p>
         </div>
       </div>
-      <p>in grey, beige, blue, red, purple, orange and green</p>
+      <h2>Colours</h2>
+      <p>COLOURS IN STOCK: Grey / Blue / Beige or Black</p>
+      <p>
+        COLOURS FOR SPECIAL ORDER : Grey / Beige/ Blue / Red / Purple / Orange /
+        Green
+      </p>
     </div>
     <img src="/assets/color_bags.jpg" alt="BagCycle image" width="600" />
     <div class="textBlock">
-      <h2>Awards</h2>
-      <p>Best Promotional Product of the Year 2024 at the CTCO trade show</p>
+      <h2>Obtained Award</h2>
+      <p>
+        The best promotional product of the year 2024 at the CTCO trade show -
+        Lyon
+      </p>
     </div>
+
     <img src="/assets/salon1.jpg" alt="BagCycle image" width="600" />
     <img src="/assets/award.jpg" alt="BagCycle image" width="600" />
   </main>
+  <footer>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:fab@netvigator.com">fab@netvigator.com</a></p>
+    <p>Telephone: <a href="tel:+33659704487">+33 6 59 70 44 87</a></p>
+    <div class="float">
+      <p><a href="/">Français</a></p>
+    </div>
+  </footer>
 </Layout>

@@ -1,8 +1,7 @@
 ---
 import { Image } from "astro:assets";
-
-import Layout from "../layouts/Layout.astro";
-import Carousel1 from "@components/Carousel1.astro";
+import Layout from "@layouts/Layout.astro";
+import Carousel1 from "@components/Carousel.astro";
 ---
 
 <Layout title="BagCycle">
@@ -95,26 +94,8 @@ import Carousel1 from "@components/Carousel1.astro";
     <h2>Contact</h2>
     <p>E-mail: <a href="mailto:fab@netvigator.com">fab@netvigator.com</a></p>
     <p>Téléphone: <a href="tel:+33659704487">+33 6 59 70 44 87</a></p>
+    <div class="float">
+      <p><a href="./en/">English</a></p>
+    </div>
   </footer>
 </Layout>
-
-<style>
-  .qualities {
-    list-style-type: square;
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    padding-left: 1.25rem;
-  }
-
-  .qualities li {
-    margin-bottom: 1rem;
-  }
-
-  .size {
-    margin-bottom: 0.4rem;
-  }
-
-  .sizeName {
-    font-family: Courier, monospace;
-  }
-</style>

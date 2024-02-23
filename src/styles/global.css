@@ -28,7 +28,7 @@ header {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
   justify-content: center;
   margin-bottom: 7rem;
   height: 6rem;
@@ -134,4 +134,41 @@ footer {
 .flicking-camera {
   display: flex;
   align-items: center;
+}
+
+.qualities {
+  list-style-type: square;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1.25rem;
+}
+
+.qualities li {
+  margin-bottom: 1rem;
+}
+
+.size {
+  margin-bottom: 0.4rem;
+}
+
+.sizeName {
+  font-family: Courier, monospace;
+}
+
+.float {
+  position: fixed;
+  bottom: 2rem; /* Adjust this value to position vertically */
+  right: 1rem; /* Adjust this value to position horizontally */
+
+  background-color: #efefef; /* Example background color */
+  border: 0.01rem solid #000; /* Example border */
+
+  z-index: 999;
+  display: flex;
+  padding: 0.4rem;
+  align-items: center;
+}
+
+.float p {
+  margin-bottom: 0rem;
 }
