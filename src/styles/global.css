@@ -36,11 +36,21 @@ header {
   align-items: center;
 }
 
+header img {
+  width: 20rem;
+  height: auto;
+}
+
 main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+footer {
+  width: 100%;
+  margin-bottom: 4rem;
 }
 
 h1 {
@@ -121,16 +131,6 @@ img {
   margin: 0 5px; /* Optional: Add margin between the divs */
 }
 
-header img {
-  width: 20rem;
-  height: auto;
-}
-
-footer {
-  width: 100%;
-  margin-bottom: 4rem;
-}
-
 .flicking-camera {
   display: flex;
   align-items: center;
@@ -155,7 +155,7 @@ footer {
   font-family: Courier, monospace;
 }
 
-.float {
+.languageWindow {
   position: fixed;
   bottom: 2rem; /* Adjust this value to position vertically */
   right: 1rem; /* Adjust this value to position horizontally */
@@ -169,6 +169,6 @@ footer {
   align-items: center;
 }
 
-.float p {
+.languageWindow p {
   margin-bottom: 0rem;
 }
