@@ -1,6 +1,6 @@
 <script lang="ts">
   import Flicking, { FlickingPanel } from "@egjs/svelte-flicking";
-  import { AutoPlay, Arrow } from "@egjs/flicking-plugins";
+  import { AutoPlay, Arrow, Fade } from "@egjs/flicking-plugins";
 
   import "@egjs/flicking-plugins/dist/arrow.css";
   import "@egjs/flicking-plugins/dist/pagination.css";
@@ -11,6 +11,7 @@
   const plugins = [
     new AutoPlay({ duration: 4000, direction: "NEXT", stopOnHover: true }),
     new Arrow(),
+    new Fade(""),
   ];
 </script>
 
@@ -27,8 +28,8 @@
     <FlickingPanel><slot name="image-5" /></FlickingPanel>
     <FlickingPanel><slot name="image-6" /></FlickingPanel>
     <svelte:fragment slot="viewport">
-      <span class="flicking-arrow-prev"></span>
-      <span class="flicking-arrow-next"></span>
+      <span class="flicking-arrow-prev is-circle"></span>
+      <span class="flicking-arrow-next is-circle"></span>
     </svelte:fragment>
   </Flicking>
 </div>
@@ -38,11 +39,15 @@
   .flicking-arrow-prev::after,
   .flicking-arrow-next::before,
   .flicking-arrow-next::after {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+  }
+
+  .is-circle {
+    background-color: white;
   }
 
   .container {
-    max-width: 30rem;
+    max-width: 40rem;
     border-radius: 8px;
     overflow: hidden;
     height: 40rem;

@@ -79,7 +79,7 @@ h4 {
 
 p {
   font-size: 1.5rem;
-  text-align: center;
+  text-align: left;
   margin-bottom: 1.5rem;
 }
 
@@ -113,6 +113,7 @@ img {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .sideBySide > div {
@@ -127,6 +128,7 @@ header img {
 
 footer {
   width: 100%;
+  margin-bottom: 4rem;
 }
 
 .flicking-camera {
