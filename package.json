@@ -10,8 +10,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.3.7",
     "@astrojs/check": "^0.5.4",
+    "@astrojs/svelte": "^5.0.3",
+    "@egjs/flicking-plugins": "^4.7.1",
+    "@egjs/svelte-flicking": "^4.11.2",
+    "astro": "^4.3.7",
+    "sharp": "^0.33.2",
+    "svelte": "^4.2.11",
     "typescript": "^5.3.3"
   }
 }

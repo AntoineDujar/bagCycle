@@ -1,0 +1,57 @@
+---
+import Flick from "@components/Flick1.svelte";
+---
+
+<Flick client:idle>
+  <img
+    slot="image-1"
+    class="ca"
+    src="./assets/car1.jpg"
+    alt="image"
+    height="800"
+  />
+  <img
+    slot="image-2"
+    class="ca"
+    src="./assets/car2.jpg"
+    alt="image"
+    height="800"
+  />
+  <img
+    slot="image-3"
+    class="ca"
+    src="./assets/car3.jpg"
+    alt="image"
+    height="800"
+  />
+  <img
+    slot="image-4"
+    class="ca"
+    src="./assets/car4.jpg"
+    alt="image"
+    height="800"
+  />
+  <img
+    slot="image-5"
+    class="ca"
+    src="./assets/car5.png"
+    alt="image"
+    height="800"
+  />
+  <img
+    slot="image-6"
+    class="ca"
+    src="./assets/car6.png"
+    alt="image"
+    height="800"
+  />
+</Flick>
+
+<style>
+  .ca {
+    width: 30rem;
+    margin-bottom: 0rem;
+    border-radius: 8px;
+    height: auto;
+  }
+</style>

@@ -2,15 +2,18 @@
 import { Image } from "astro:assets";
 
 import Layout from "../layouts/Layout.astro";
+import Carousel1 from "@components/Carousel1.astro";
 ---
 
 <Layout title="BagCycle">
   <header>
     <img src="/assets/bc_logo.png" alt="BagCycle logo image" height="200" />
+    <h4>Produit Eco-Responsable 2 en 1</h4>
+    <h4>Déposé INPI</h4>
   </header>
   <main>
-    <h4>Produit Déposé INPI - Eco Responsable</h4>
-    <h1>2 en 1 - Sacoche Vélo et Sac à Dos</h1>
+    <h1>Sacoche Vélo</h1>
+    <h1>Sac à Dos</h1>
     <img
       src="/assets/red_bag_transparent.png"
       alt="BagCycle image"
@@ -20,6 +23,7 @@ import Layout from "../layouts/Layout.astro";
       <h4>présenté en France par</h4>
       <h3>L'atelier Français du Surcyclage</h3>
     </div>
+
     <div class="textBlock">
       <div class="sideImage">
         <img src="/assets/bag1.jpg" alt="BagCycle image" width="200" />
@@ -30,45 +34,51 @@ import Layout from "../layouts/Layout.astro";
         <img src="/assets/bag4.jpg" alt="BagCycle image" width="200" />
       </div>
     </div>
+    <Carousel1 />
     <div class="textBlock">
       <h2>Qualités</h2>
-      <p>
-        Matière Eco-Responsable Rpet, à base de bouteilles plastique recyclées
-      </p>
-      <p>Bandes réfléchissantes pour votre sécurité, conformes à la norme</p>
-      <p>Une poche intérieure zippée pour le modèle sans Isotherme</p>
-      <p>
-        Le plus produit : 1 porte-clés forme Vélo en aluminium au nom de la
-        marque
-      </p>
-      <p>Le moyen modèle peut contenir 3 bouteille de 1L</p>
-      <p>
-        Pour la version Isotherme : permet de garder les boissons/repas au frais
-        pendant plusieurs heures
-      </p>
+      <ul class="qualities">
+        <li>
+          Matière Eco-Responsable Rpet, à base de bouteilles plastique recyclées
+        </li>
+        <li>
+          Bandes réfléchissantes pour votre sécurité, conformes à la norme
+        </li>
+        <li>Une poche intérieure zippée pour le modèle sans Isotherme</li>
+        <li>
+          Le plus produit : 1 porte-clés forme Vélo en aluminium au nom de la
+          marque
+        </li>
+        <li>Le moyen modèle peut contenir 3 bouteille de 1L</li>
+        <li>
+          La version Isotherme (5mm épaisseur) permet de garder les
+          boissons/repas au frais pendant plusieurs heures
+        </li>
+      </ul>
     </div>
     <img src="/assets/bagwithmodel.png" alt="BagCycle image" width="600" />
     <div class="textBlock">
-      <h2>Tailles et Couleurs</h2>
+      <h2>Tailles</h2>
       <div class="sideBySide">
         <div>
-          <p>Moyen</p>
-          <p>12-13L</p>
+          <p class="size sizeName">MOYEN</p>
+          <p class="size">12-13L</p>
           <p>22x12x44.5cm</p>
-          <p>37.95€ TTC</p>
+          <p>PVP : 37.95€ TTC</p>
         </div>
         <div>
-          <p>Grand</p>
-          <p>18L</p>
+          <p class="size sizeName">GRAND</p>
+          <p class="size">18L-19L</p>
           <p>28x16x53.5cm</p>
-          <p>39.95€ TTC</p>
+          <p>PVP : 39.95€ TTC</p>
         </div>
       </div>
+      <h2>Couleurs</h2>
+      <p>COLORIS SUR STOCK : Gris / Bleu / Beige ou Noir</p>
       <p>
-        versions avec ou sans matière Isotherme, épaisseur matière isotherme à
-        5mm
+        COLORIS FABRICATION SPECIALE : Gris / Beige/ Bleu / Rouge / Violet /
+        Orange / Vert
       </p>
-      <p>en gris, beige, bleu, rouge, violet, orange et vert</p>
     </div>
     <img src="/assets/color_bags.jpg" alt="BagCycle image" width="600" />
     <div class="textBlock">
@@ -77,6 +87,8 @@ import Layout from "../layouts/Layout.astro";
         Le meilleur produit promotionnel de l'année 2024 au salon CTCO - Lyon
       </p>
     </div>
+
+    <img src="/assets/salon1.jpg" alt="BagCycle image" width="600" />
     <img src="/assets/award.jpg" alt="BagCycle image" width="600" />
   </main>
   <footer>
@@ -85,3 +97,24 @@ import Layout from "../layouts/Layout.astro";
     <p>Téléphone: <a href="tel:+33659704487">+33 6 59 70 44 87</a></p>
   </footer>
 </Layout>
+
+<style>
+  .qualities {
+    list-style-type: square;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1.25rem;
+  }
+
+  .qualities li {
+    margin-bottom: 1rem;
+  }
+
+  .size {
+    margin-bottom: 0.4rem;
+  }
+
+  .sizeName {
+    font-family: Courier, monospace;
+  }
+</style>
