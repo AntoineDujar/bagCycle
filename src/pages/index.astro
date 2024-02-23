@@ -37,37 +37,39 @@ import Carousel1 from "@components/Carousel1.astro";
     <Carousel1 />
     <div class="textBlock">
       <h2>Qualités</h2>
-      <p>
-        Matière Eco-Responsable Rpet, à base de bouteilles plastique recyclées
-      </p>
-      <p>Bandes réfléchissantes pour votre sécurité, conformes à la norme</p>
-      <p>Une poche intérieure zippée pour le modèle sans Isotherme</p>
-      <p>
-        Le plus produit : 1 porte-clés forme Vélo en aluminium au nom de la
-        marque
-      </p>
-      <p>Le moyen modèle peut contenir 3 bouteille de 1L</p>
-      <p>
-        La version Isotherme (5mm épaisseur) permet de garder les boissons/repas
-        au frais pendant plusieurs heures
-      </p>
+      <ul class="qualities">
+        <li>
+          Matière Eco-Responsable Rpet, à base de bouteilles plastique recyclées
+        </li>
+        <li>
+          Bandes réfléchissantes pour votre sécurité, conformes à la norme
+        </li>
+        <li>Une poche intérieure zippée pour le modèle sans Isotherme</li>
+        <li>
+          Le plus produit : 1 porte-clés forme Vélo en aluminium au nom de la
+          marque
+        </li>
+        <li>Le moyen modèle peut contenir 3 bouteille de 1L</li>
+        <li>
+          La version Isotherme (5mm épaisseur) permet de garder les
+          boissons/repas au frais pendant plusieurs heures
+        </li>
+      </ul>
     </div>
     <img src="/assets/bagwithmodel.png" alt="BagCycle image" width="600" />
     <div class="textBlock">
       <h2>Tailles et Couleurs</h2>
       <div class="sideBySide">
         <div>
-          <p>MOYEN</p>
-          <p>12-13L</p>
+          <p class="size sizeName">MOYEN</p>
+          <p class="size">12-13L</p>
           <p>22x12x44.5cm</p>
-          <p>a make less space between moyen and 12-13L and 22x12x..</p>
           <p>PVP : 37.95€ TTC</p>
         </div>
         <div>
-          <p>GRAND</p>
-          <p>18L-19L</p>
+          <p class="size sizeName">GRAND</p>
+          <p class="size">18L-19L</p>
           <p>28x16x53.5cm</p>
-          <p>a</p>
           <p>PVP : 39.95€ TTC</p>
         </div>
       </div>
@@ -84,7 +86,6 @@ import Carousel1 from "@components/Carousel1.astro";
         Le meilleur produit promotionnel de l'année 2024 au salon CTCO - Lyon
       </p>
     </div>
-    <!-- <Carousel2 /> -->
 
     <img src="/assets/salon1.jpg" alt="BagCycle image" width="600" />
     <img src="/assets/award.jpg" alt="BagCycle image" width="600" />
@@ -95,3 +96,24 @@ import Carousel1 from "@components/Carousel1.astro";
     <p>Téléphone: <a href="tel:+33659704487">+33 6 59 70 44 87</a></p>
   </footer>
 </Layout>
+
+<style>
+  .qualities {
+    list-style-type: square;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1.25rem;
+  }
+
+  .qualities li {
+    margin-bottom: 1rem;
+  }
+
+  .size {
+    margin-bottom: 0.4rem;
+  }
+
+  .sizeName {
+    font-weight: 550;
+  }
+</style>
