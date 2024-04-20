@@ -172,3 +172,13 @@ img {
 .languageWindow p {
   margin-bottom: 0rem;
 }
+
+.social_icon {
+  width: 4rem;
+  height: 4rem;
+  display: inline-block;
+}
+
+.social_icon_container {
+  text-align: center;
+}
