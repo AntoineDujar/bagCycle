@@ -30,7 +30,7 @@ header {
   flex-direction: column;
   margin-top: 2.5rem;
   justify-content: center;
-  margin-bottom: 7rem;
+  margin-bottom: 4rem;
   height: 6rem;
   justify-content: center;
   align-items: center;
@@ -94,10 +94,16 @@ p {
 }
 
 img {
-  width: 100%;
+  width: 80%;
   height: auto;
   margin-bottom: 1rem;
   border-radius: 8px;
+}
+
+@media (max-width: 1250px) {
+  img {
+    width: 100%;
+  }
 }
 
 .textBlock {
