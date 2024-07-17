@@ -1,20 +1,30 @@
 ---
-import Layout from "@layouts/Layout_En.astro";
+import Layout from "@layouts/Layout.astro";
 import Carousel1 from "@components/Carousel.astro";
 ---
 
-<Layout pageTitle="BagCycle | Bicycle Bag and Backpack">
+<Layout pageTitle="BagCycle | Sacoche Vélo et Sac à Dos Eco-Responsable">
   <header>
-    <img
-      src="/assets/bc_logo.png"
-      alt="BagCycle logo image"
-      height="200"
-      width="565"
-    />
-    <h4>2 in 1 Eco-friendly product</h4>
-    <h4>INPI registered</h4>
+    <a
+      id="banner"
+      href="https://mom.maison-objet.com/fr/marque/21299/bagcycle"
+      target="_blank"
+    >
+      <img src="/assets/mom_logo.svg" alt="MOM logo" />
+      <h4>Bagcycle is now available at Maison et Objets!</h4>
+    </a>
   </header>
   <main>
+    <div id="logo">
+      <img
+        src="/assets/bc_logo.png"
+        alt="BagCycle logo image"
+        height="200"
+        width="565"
+      />
+      <h4>2 in 1 Eco-friendly product</h4>
+      <h4>INPI registered</h4>
+    </div>
     <h1>Bicycle Bag</h1>
     <h1>Backpack</h1>
     <img
@@ -114,43 +124,90 @@ import Carousel1 from "@components/Carousel.astro";
       height="354"
     />
     <div class="textBlock">
-      <h2>Obtained Award</h2>
+      <h2>Obtained Awards</h2>
       <p>
         The best promotional product of the year 2024 at the CTCO trade show -
         Lyon
       </p>
+      <img
+        src="/assets/salon1.webp"
+        alt="BagCycle image"
+        width="600"
+        height="450"
+      />
+      <img
+        src="/assets/award.webp"
+        alt="BagCycle image"
+        width="600"
+        height="410"
+      />
     </div>
 
-    <img
-      src="/assets/salon1.webp"
-      alt="BagCycle image"
-      width="600"
-      height="450"
-    />
-    <img
-      src="/assets/award.webp"
-      alt="BagCycle image"
-      width="600"
-      height="410"
-    />
+    <div class="textBlock">
+      <h2>Our Appearances</h2>
+      <p>
+        Our Bagcycle bags accompany the engineering students from Dunkirk during
+        their ecological journey of over 1500 km by bicycle.
+      </p>
+      <img
+        src="/assets/etudiants_1.jpg"
+        alt="BagCycle image"
+        width="600"
+        height="450"
+      />
+      <img
+        src="/assets/etudiants_2.jpg"
+        alt="BagCycle image"
+        width="600"
+        height="410"
+      />
+    </div>
+
+    <div class="textBlock">
+      <h2>Contact</h2>
+      <p>
+        Email: <a href="mailto:valerie.bagcycle@gmail.com"
+          >valerie.bagcycle@gmail.com</a
+        >
+      </p>
+
+      <p>Email: <a href="mailto:fab@netvigator.com">fab@netvigator.com</a></p>
+      <p>Telephone: <a href="tel:+33659704487">+33 6 59 70 44 87</a></p>
+      <div class="social_icon_container">
+        <a href="https://www.tiktok.com/@bagcycle" target="_blank">
+          <img
+            class="social_icon"
+            src="/assets/tiktok.svg"
+            alt="tiktok icon"
+            width="5"
+            height="5"
+          />
+        </a>
+        <a
+          href="https://www.facebook.com/profile.php?id=61556625431861"
+          target="_blank"
+        >
+          <img
+            class="social_icon"
+            src="/assets/facebook.svg"
+            alt="facebook icon"
+            width="5"
+            height="5"
+          />
+        </a>
+        <a href="https://www.linkedin.com/in/097464315/" target="_blank">
+          <img
+            class="social_icon"
+            src="/assets/linkedin.svg"
+            alt="linkedin icon"
+            width="5"
+            height="5"
+          />
+        </a>
+      </div>
+      <div class="languageWindow">
+        <p><a href="/">Français</a></p>
+      </div>
+    </div>
   </main>
-  <footer>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:fab@netvigator.com">fab@netvigator.com</a></p>
-    <p>Telephone: <a href="tel:+33659704487">+33 6 59 70 44 87</a></p>
-    <div class="social_icon_container">
-      <a href="https://www.tiktok.com/@bagcycle">
-        <img
-          class="social_icon"
-          src="/assets/tiktok.svg"
-          alt="tiktok icon"
-          width="5"
-          height="5"
-        />
-      </a>
-    </div>
-    <div class="languageWindow">
-      <p><a href="/">Français</a></p>
-    </div>
-  </footer>
 </Layout>

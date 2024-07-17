@@ -5,16 +5,26 @@ import Carousel1 from "@components/Carousel.astro";
 
 <Layout pageTitle="BagCycle | Sacoche Vélo et Sac à Dos Eco-Responsable">
   <header>
-    <img
-      src="/assets/bc_logo.png"
-      alt="BagCycle logo image"
-      height="200"
-      width="565"
-    />
-    <h4>Produit Eco-Responsable 2 en 1</h4>
-    <h4>Déposé INPI</h4>
+    <a
+      id="banner"
+      href="https://mom.maison-objet.com/fr/marque/21299/bagcycle"
+      target="_blank"
+    >
+      <img src="/assets/mom_logo.svg" alt="MOM logo" />
+      <h4>Bagcycle est maintenant disponible à Maison et Objets!</h4>
+    </a>
   </header>
   <main>
+    <div id="logo">
+      <img
+        src="/assets/bc_logo.png"
+        alt="BagCycle logo image"
+        height="200"
+        width="565"
+      />
+      <h4>Produit Eco-Responsable 2 en 1</h4>
+      <h4>Déposé INPI</h4>
+    </div>
     <h1>Sacoche Vélo</h1>
     <h1>Sac à Dos</h1>
     <img
@@ -122,38 +132,85 @@ import Carousel1 from "@components/Carousel.astro";
       <p>
         Le meilleur produit promotionnel de l'année 2024 au salon CTCO - Lyon
       </p>
+      <img
+        src="/assets/salon1.webp"
+        alt="BagCycle image"
+        width="600"
+        height="450"
+      />
+      <img
+        src="/assets/award.webp"
+        alt="BagCycle image"
+        width="600"
+        height="410"
+      />
     </div>
 
-    <img
-      src="/assets/salon1.webp"
-      alt="BagCycle image"
-      width="600"
-      height="450"
-    />
-    <img
-      src="/assets/award.webp"
-      alt="BagCycle image"
-      width="600"
-      height="410"
-    />
+    <div class="textBlock">
+      <h2>Nos Apparitions</h2>
+      <p>
+        Nos sacs Bagcycle accompagnent des étudiants ingénieurs de Dunkerque
+        lors de leur traversée écologique de plus de 1500 km à vélo.
+      </p>
+      <img
+        src="/assets/etudiants_1.jpg"
+        alt="BagCycle image"
+        width="600"
+        height="450"
+      />
+      <img
+        src="/assets/etudiants_2.jpg"
+        alt="BagCycle image"
+        width="600"
+        height="410"
+      />
+    </div>
+
+    <div class="textBlock">
+      <h2>Contact</h2>
+      <p>
+        E-mail: <a href="mailto:valerie.bagcycle@gmail.com"
+          >valerie.bagcycle@gmail.com</a
+        >
+      </p>
+
+      <p>E-mail: <a href="mailto:fab@netvigator.com">fab@netvigator.com</a></p>
+      <p>Téléphone: <a href="tel:+33659704487">+33 6 59 70 44 87</a></p>
+      <div class="social_icon_container">
+        <a href="https://www.tiktok.com/@bagcycle" target="_blank">
+          <img
+            class="social_icon"
+            src="/assets/tiktok.svg"
+            alt="tiktok icon"
+            width="5"
+            height="5"
+          />
+        </a>
+        <a
+          href="https://www.facebook.com/profile.php?id=61556625431861"
+          target="_blank"
+        >
+          <img
+            class="social_icon"
+            src="/assets/facebook.svg"
+            alt="facebook icon"
+            width="5"
+            height="5"
+          />
+        </a>
+        <a href="https://www.linkedin.com/in/097464315/" target="_blank">
+          <img
+            class="social_icon"
+            src="/assets/linkedin.svg"
+            alt="linkedin icon"
+            width="5"
+            height="5"
+          />
+        </a>
+      </div>
+      <div class="languageWindow">
+        <p><a href="./en/">English</a></p>
+      </div>
+    </div>
   </main>
-  <footer>
-    <h2>Contact</h2>
-    <p>E-mail: <a href="mailto:fab@netvigator.com">fab@netvigator.com</a></p>
-    <p>Téléphone: <a href="tel:+33659704487">+33 6 59 70 44 87</a></p>
-    <div class="social_icon_container">
-      <a href="https://www.tiktok.com/@bagcycle">
-        <img
-          class="social_icon"
-          src="/assets/tiktok.svg"
-          alt="tiktok icon"
-          width="5"
-          height="5"
-        />
-      </a>
-    </div>
-    <div class="languageWindow">
-      <p><a href="./en/">English</a></p>
-    </div>
-  </footer>
 </Layout>
